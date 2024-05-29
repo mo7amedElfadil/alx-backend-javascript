@@ -5,6 +5,8 @@
  * @returns {number} The result of the division.
  */
 export default function divideFunction(numerator, denominator) {
-  if (denominator === 0) throw Error('Cannot divide by 0');
+  if (denominator === 0) {
+    throw Error('Cannot divide by 0');
+  }
   return numerator / denominator;
 }
