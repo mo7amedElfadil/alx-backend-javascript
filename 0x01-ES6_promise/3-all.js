@@ -1,4 +1,4 @@
-import { uploadPhoto, createUser } from './util';
+import { uploadPhoto, createUser } from './utils';
 
 /**
  * resolve all promises and log the results
