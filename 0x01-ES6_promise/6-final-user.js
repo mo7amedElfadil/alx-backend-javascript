@@ -12,10 +12,10 @@ import uploadPhoto from './5-photo-reject';
  *  },
  *  ...
  *  ]
- * @param {string} firstName - First name
- * @param {string} lastName - Last name
- * @param {string} fileName - File name
- * @return {Promise}
+ *  @param {string} firstName
+ *  @param {string} lastName
+ *  @param {string} fileName
+ *  @return {Promise} - Array of objects
  */
 
 export default async function handleProfileSignup(firstName, lastName, fileName) {
