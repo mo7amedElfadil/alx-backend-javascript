@@ -1,3 +1,8 @@
+/**
+ * Holberton Class
+ * @param {number} year
+ * @param {string} location
+ */
 export class HolbertonClass {
   constructor(year, location) {
     this._year = year;
@@ -13,15 +18,41 @@ export class HolbertonClass {
   }
 }
 
+/**
+ * StudentHolberton Class
+ * @param {string} firstName
+ * @param {string} lastName
+ * @param {HolbertonClass} holbertonClass
+ */
 export class StudentHolberton {
   constructor(firstName, lastName, holbertonClass) {
-    this._firstName = firstName;
-    this._lastName = lastName;
-    this._holbertonClass = holbertonClass;
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.holbertonClass = holbertonClass;
   }
 
   get fullName() {
     return `${this._firstName} ${this._lastName}`;
+  }
+
+  set firstName(firstName) {
+    this._firstName = firstName;
+  }
+
+  get firstName() {
+    return this._firstName;
+  }
+
+  set lastName(lastName) {
+    this._lastName = lastName;
+  }
+
+  get lastName() {
+    return this._lastName;
+  }
+
+  set holbertonClass(holbertonClass) {
+    this._holbertonClass = holbertonClass;
   }
 
   get holbertonClass() {
