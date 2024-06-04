@@ -1,0 +1,17 @@
+/**
+ * updateUniqueItems - updates the value of all items with value 1 to 100
+ * @param {Map} map
+ * @return {Map} - updated map
+ */
+export default function updateUniqueItems(map) {
+  if (map instanceof Map) {
+    map.forEach((value, key) => {
+      if (value === 1) {
+        map.set(key, 100);
+      }
+    });
+    return map;
+  }
+
+  throw new Error('Cannot process');
+}
