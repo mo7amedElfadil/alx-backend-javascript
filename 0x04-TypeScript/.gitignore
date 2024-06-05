@@ -1,0 +1,12 @@
+node_modules/
+package-lock.json
+index.html
+!/*.js
+!/.gitignore
+!/README.md
+!/LICENSE
+!/main.js
+!/package.json
+!/.eslintrc.js
+!/tsconfig.json
+!/webpack.config.js
