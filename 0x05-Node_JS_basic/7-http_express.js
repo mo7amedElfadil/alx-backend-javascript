@@ -46,16 +46,28 @@ function countStudents(path) {
 }
 
 app.get('/', (_, res) => {
-  res.send('Hello Holberton School!');
+  const body = 'Hello Holberton School!';
+  res.setHeader('Content-Type', 'text/plain');
+  res.setHeader('Content-Length', body.length);
+  res.statusCode = 200;
+  res.send(body);
 });
 
 app.get('/students', (_, res) => {
   countStudents(path).then((data) => {
     const result = ['This is the list of our students'];
     result.push(...data);
-    res.send(result.join('\n'));
-  }).catch((error) => {
-    res.send(error.message);
+    const body = result.join('\n');
+    res.setHeader('Content-Type', 'text/plain');
+    res.setHeader('Content-Length', body.length);
+    res.write(Buffer.from(body));
+  }).catch((err) => {
+    const result = ['This is the list of our students'];
+    result.push(err.message);
+    const body = result.join('\n');
+    res.setHeader('Content-Type', 'text/plain');
+    res.setHeader('Content-Length', body.length);
+    res.write(Buffer.from(body));
   });
 });
 
