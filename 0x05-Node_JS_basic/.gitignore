@@ -3,4 +3,6 @@
 !/.gitignore
 !/README.md
 !/LICENSE
+!/full_server/
+!/full_server/**/*
 *main.js
