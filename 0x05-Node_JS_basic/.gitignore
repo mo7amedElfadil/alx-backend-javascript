@@ -6,7 +6,7 @@
 !/full_server/
 !/full_server/**/*
 !/.babelrc
-!/.package.json
+!/package.json
 !/babel.config.js
 !/.eslintrc.js
 *main.js

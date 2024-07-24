@@ -1,5 +1,4 @@
 #!/usr/bin/node
-
 import fs from 'fs';
 
 /**
