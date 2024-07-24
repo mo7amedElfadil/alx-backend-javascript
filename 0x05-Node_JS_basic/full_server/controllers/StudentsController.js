@@ -1,5 +1,5 @@
 #!/usr/bin/node
-import readDatabase from '../utils';
+import { readDatabase } from '../utils';
 
 /**
  * @class StudentsController - class for students controller
