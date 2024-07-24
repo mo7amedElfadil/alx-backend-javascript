@@ -41,4 +41,4 @@ function readDatabase(filePath) {
   });
 }
 
-export default { readDatabase, fs };
+export default readDatabase;
