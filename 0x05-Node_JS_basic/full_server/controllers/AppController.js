@@ -1,6 +1,7 @@
 #!/usr/bin/node
 /**
- * class AppController - This class is responsible for handling the requests for the homepage
+ * class AppController - This class is responsible for handling the requests
+ * for the homepage
  */
 class AppController {
   /**

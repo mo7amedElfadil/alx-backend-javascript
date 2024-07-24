@@ -2,9 +2,7 @@
 import readDatabase from '../utils';
 
 /**
- * class StudentsController - class for students controller
- *
- *
+ * @class StudentsController - class for students controller
  */
 class StudentsController {
   /**
@@ -12,10 +10,9 @@ class StudentsController {
    *
    * @param {Object} req  request
    * @param {Object} res  response
-   *
    * @return {Object}  all students
    */
-  static async getAllStudents(req, res) {
+  static async getAllStudents(_, res) {
     try {
       const path = process.argv[2] || '';
       const data = await readDatabase(path);
@@ -33,10 +30,8 @@ class StudentsController {
 
   /**
    * getAllStudentsByMajor - get all students by major
-   *
    * @param {Object} req  request
    * @param {Object} res  response
-   *
    * @return {Object}  all students by major
    */
   static async getAllStudentsByMajor(req, res) {
