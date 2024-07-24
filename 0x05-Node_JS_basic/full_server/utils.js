@@ -1,6 +1,4 @@
-#!/usr/bin/node
 import fs from 'fs';
-
 /**
  * function readDatabase - accepts a file path
  * Reads the data asynchronously and returns a promise
@@ -43,4 +41,4 @@ function readDatabase(filePath) {
   });
 }
 
-export default readDatabase;
+export default { readDatabase, fs };
