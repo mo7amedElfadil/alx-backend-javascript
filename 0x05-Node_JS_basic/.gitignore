@@ -5,4 +5,8 @@
 !/LICENSE
 !/full_server/
 !/full_server/**/*
+!/.babelrc
+!/.package.json
+!/babel.config.js
+!/.eslintrc.js
 *main.js
