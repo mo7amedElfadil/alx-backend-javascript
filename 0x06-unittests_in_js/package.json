@@ -1,0 +1,29 @@
+{
+	"name": "test",
+	"version": "1.0.0",
+	"description": "test",
+	"main": "index.js",
+	"scripts": {
+		"test": "mocha"
+	},
+	"author": "Mohamed Elfadil",
+	"devDependencies": {
+		"mocha": "^10.7.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "0x06-unittests_in_js"
+	},
+	"keywords": [
+		"Mocha",
+		"Chai",
+		"Sinon",
+		"Express",
+		"Request",
+		"NodeJS"
+	],
+	"license": "ISC",
+	"dependencies": {
+		"eslint": "^9.7.0"
+	}
+}
