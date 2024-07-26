@@ -1,9 +1,10 @@
 #!/usr/bin/node
 /**
  * @function calculateNumber - round a and b and return the sum
+ * @param {string} type - the type of operation
  * @param {number} a - the first number
  * @param {number} b - the second number
- * @returns {number} - the sum of a and b
+ * @returns {number} - the sum of a and b if type is SUM
  * @returns {number} - the difference of a and b if type is SUBTRACT
  * @returns {number} - the quotient of a and b if type is DIV
  * @returns {string} - 'Error' if b is 0
@@ -25,7 +26,7 @@ function calculateNumber(type, a, b) {
       return Math.round(a) / roundedB;
   }
     default:
-      return undefined;
+      break;
   }
 }
 

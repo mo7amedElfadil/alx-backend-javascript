@@ -5,3 +5,5 @@
 !/LICENSE
 *main.js
 !/package.json
+!/*-api/
+!/*-api/**/*
