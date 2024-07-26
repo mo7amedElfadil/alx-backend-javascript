@@ -26,7 +26,7 @@ function calculateNumber(type, a, b) {
       return Math.round(a) / roundedB;
   }
     default:
-      break;
+      return undefined;
   }
 }
 
