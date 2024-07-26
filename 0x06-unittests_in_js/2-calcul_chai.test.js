@@ -2,10 +2,8 @@
 /**
  * test for calcul.js
  */
-const assert = require('assert');
-const chai = require('chai');
-const expect = chai.expect;
-const calculateNumber = require('./1-calcul');
+const { expect } = require('chai');
+const calculateNumber = require('./2-calcul_chai');
 
 
 describe('calculateNumber', function() {
